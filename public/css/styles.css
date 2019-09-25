@@ -1,0 +1,56 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto; /*0: margin  value for top and bottom, auto: margin  value for left and rigth. only one value: all sides*/
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*viewport height, 100%, the box where my content shows up in the browser*/
+}
+
+.main-content {
+    flex-grow: 1; /* tells  flexbox that the main content should take up all leftover space*/
+}
+
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px; /* margin puts space outside the box*/
+    padding: 16px 0; /* padding  puts spaced inside the box*/
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 250px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
