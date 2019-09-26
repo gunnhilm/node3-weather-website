@@ -47,18 +47,7 @@ app.get('/help', (req, res) => {
     res.send('<h1>Weather</h1>')
 })
  */
-// help-page - why did we delete/comment out these? did  it before i made the  app.get-s above
-/* app.get('/help', (req, res) => {
-    res.send({
-        name: 'Andrew',
-        age: 27
-    })
-})
- */
-/* app.get('/about', (req, res) => {
-    res.send('<h1>About-page for weather app</h1>')
-})
- */
+
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
